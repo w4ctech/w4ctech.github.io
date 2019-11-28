@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>RxJava的优势 | w4ctech—深自缄默 如云漂泊</title>
+    <meta name="description" content="w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RxJava的优势 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:site_name" content="RxJava的优势 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="RxJava的优势 | w4ctech—深自缄默 如云漂泊" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.330ac441.css" as="style"><link rel="preload" href="/assets/js/app.f6532e8d.js" as="script"><link rel="preload" href="/assets/js/1.ae346d11.js" as="script"><link rel="preload" href="/assets/js/14.7fe932cb.js" as="script"><link rel="preload" href="/assets/js/5.97d58917.js" as="script"><link rel="preload" href="/assets/js/7.411d902d.js" as="script"><link rel="preload" href="/assets/js/9.141b68b1.js" as="script"><link rel="preload" href="/assets/js/6.3e579366.js" as="script"><link rel="preload" href="/assets/js/25.73c683c0.js" as="script"><link rel="preload" href="/assets/js/13.99dd5eea.js" as="script"><link rel="preload" href="/assets/js/15.1670b3c9.js" as="script"><link rel="prefetch" href="/assets/js/10.39987fcb.js"><link rel="prefetch" href="/assets/js/11.d5940bcd.js"><link rel="prefetch" href="/assets/js/12.cf4a791b.js"><link rel="prefetch" href="/assets/js/16.d33edf19.js"><link rel="prefetch" href="/assets/js/17.5fcdcec0.js"><link rel="prefetch" href="/assets/js/18.6dddfe3e.js"><link rel="prefetch" href="/assets/js/19.c91e8510.js"><link rel="prefetch" href="/assets/js/20.9dab0467.js"><link rel="prefetch" href="/assets/js/21.4ea6b0b2.js"><link rel="prefetch" href="/assets/js/22.c0f91536.js"><link rel="prefetch" href="/assets/js/23.118678a7.js"><link rel="prefetch" href="/assets/js/24.80089d51.js"><link rel="prefetch" href="/assets/js/26.785a6c8b.js"><link rel="prefetch" href="/assets/js/27.dca280da.js"><link rel="prefetch" href="/assets/js/28.e7c9d219.js"><link rel="prefetch" href="/assets/js/29.395ef867.js"><link rel="prefetch" href="/assets/js/30.a6f303ea.js"><link rel="prefetch" href="/assets/js/31.87f43480.js"><link rel="prefetch" href="/assets/js/32.dd91c3b7.js"><link rel="prefetch" href="/assets/js/33.4f589617.js"><link rel="prefetch" href="/assets/js/34.52618314.js"><link rel="prefetch" href="/assets/js/35.ec810edf.js"><link rel="prefetch" href="/assets/js/36.f12d6e13.js"><link rel="prefetch" href="/assets/js/37.a9f5c694.js"><link rel="prefetch" href="/assets/js/38.358cf9ca.js"><link rel="prefetch" href="/assets/js/39.6f9649e8.js"><link rel="prefetch" href="/assets/js/4.08839aaf.js"><link rel="prefetch" href="/assets/js/40.fbef6643.js"><link rel="prefetch" href="/assets/js/41.7f279fd8.js"><link rel="prefetch" href="/assets/js/42.8d666134.js"><link rel="prefetch" href="/assets/js/43.bafe2bae.js"><link rel="prefetch" href="/assets/js/44.f7c9c349.js"><link rel="prefetch" href="/assets/js/45.c8de53ac.js"><link rel="prefetch" href="/assets/js/46.e2035206.js"><link rel="prefetch" href="/assets/js/47.7a45505a.js"><link rel="prefetch" href="/assets/js/48.bcc99385.js"><link rel="prefetch" href="/assets/js/8.a341866b.js"><link rel="prefetch" href="/assets/js/vendors~search.9109d0cf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.330ac441.css">
+  </head>
+  <body>
+    <div id="loader-wrapper" style="display: none;opacity:0">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="app" data-server-rendered="true"><div style="height:100%;" data-v-80d5f2bc><section class="el-container main-container" data-v-80d5f2bc><aside class="el-aside menu" style="width:auto;" data-v-67e96130 data-v-80d5f2bc><ul role="menubar" class="menu-wrap el-menu" style="background-color:;" data-v-67e96130><li data-v-67e96130><div class="brand-wrap" style="background-image:url(/brand.jpg);" data-v-67e96130><div class="brand" data-v-67e96130><a href="/" class="avatar waves-effect waves-circle waves-light router-link-active" data-v-67e96130><img src="/avatar.jpg" data-v-67e96130></a> <hgroup class="introduce" data-v-67e96130><div class="nickname" data-v-67e96130>w4ctech</div> <a title="w3ctech@qq.com" class="mail" data-v-67e96130>w3ctech@qq.com</a></hgroup></div></div></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-home" data-v-67e96130></i> <span class="item-title" data-v-67e96130>个人主页</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-biaoqian" data-v-67e96130></i> <span class="item-title" data-v-67e96130>标签分类</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-wenzhang" data-v-67e96130></i> <span class="item-title" data-v-67e96130>时间归档</span></li> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-aboutme" data-v-67e96130></i> <span class="item-title" data-v-67e96130>自我介绍</span></li></ul></aside> <section class="el-container container-warp" data-v-80d5f2bc><header id="topHeader" class="el-header top-header" style="height:60px;padding-left:260px;" data-v-1a942948 data-v-80d5f2bc><div class="header-warp el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-12 el-col-xs-7" data-v-1a942948><div class="el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-2" data-v-1a942948><button type="button" class="el-button el-button--primary is-circle" data-v-1a942948><!----><!----><span><i class="iconfont icon-caidan" data-v-1a942948></i></span></button></div></div></div> <div class="el-col el-col-20 el-col-xs-24" data-v-1a942948><div class="grid-content bg-purple-light" data-v-1a942948><div class="el-row is-justify-end is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-13 el-col-xs-24 el-col-sm-21 el-col-md-17 el-col-lg-13" data-v-1a942948><div aria-haspopup="listbox" role="combobox" aria-owns="el-autocomplete-7898" class="el-autocomplete search-input" data-v-1a942948><div class="el-input el-input--small el-input--suffix"><!----><input type="text" autocomplete="off" valueKey="value" popperClass="search-popper" placeholder="搜搜看" fetchSuggestions="function () { [native code] }" debounce="300" placement="bottom-start" popperAppendToBody="true" value="" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-search search-ico" data-v-1a942948></i><!----></span><!----></span><!----></div><div role="region" class="el-autocomplete-suggestion el-popper search-popper" style="width:;display:none;"><div class="el-scrollbar"><div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="width:0;transform:translateX(0%);ms-transform:translateX(0%);webkit-transform:translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="height:0;transform:translateY(0%);ms-transform:translateY(0%);webkit-transform:translateY(0%);"></div></div></div></div></div></div></div></div></div></div></header> <main class="el-main my-main" style="margin-left:240px;" data-v-105de776 data-v-80d5f2bc><div class="content-header index-header" data-v-60d87e45 data-v-105de776><div class="container fade-scale in" data-v-60d87e45><h1 id="conentHeader" class="title" data-v-60d87e45>RxJava的优势</h1> <h5 class="subtitle" data-v-60d87e45></h5></div></div> <div data-v-95d4b5b2 data-v-105de776 data-v-105de776><div class="post-content el-row is-justify-center el-row--flex" data-v-95d4b5b2><div id="post-card" class="post-card post-sign el-col el-col-16 el-col-xs-24 el-col-sm-23 el-col-md-23 el-col-lg-16" data-v-95d4b5b2><div class="content__default" data-v-95d4b5b2><h2 id="案例对比"><a href="#案例对比" aria-hidden="true" class="header-anchor">#</a> 案例对比</h2> <blockquote><p>这是一个下载网络图片并且装载水印，然后显示到ImageView上的代码案例</p></blockquote> <h4 id="抽取公用代码"><a href="#抽取公用代码" aria-hidden="true" class="header-anchor">#</a> 抽取公用代码</h4> <pre><code>public class MainActivity extends AppCompatActivity {
+
+    private ImageView mImageView;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        mImageView = (ImageView) findViewById(R.id.image);
+    }
+
+	// 给图片加水印的方法
+    private Bitmap createWatermark(Bitmap bitmap, String mark) {
+        int w = bitmap.getWidth();
+        int h = bitmap.getHeight();
+        Bitmap bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bmp);
+        Paint p = new Paint();
+        // 水印颜色
+        p.setColor(Color.parseColor(&quot;#C5FF0000&quot;));
+        // 水印字体大小
+        p.setTextSize(150);
+        //抗锯齿
+        p.setAntiAlias(true);
+        //绘制图像
+        canvas.drawBitmap(bitmap, 0, 0, p);
+        //绘制文字
+        canvas.drawText(mark, 0, h / 2, p);
+        canvas.save(Canvas.ALL_SAVE_FLAG);
+        canvas.restore();
+        return bmp;
+    }
+}
+</code></pre> <h4 id="没用-rxjava-之前"><a href="#没用-rxjava-之前" aria-hidden="true" class="header-anchor">#</a> 没用 RxJava 之前</h4> <pre><code>new Thread(new Runnable() {
+    @Override
+    public void run() {
+        try {
+            URL url = new URL(&quot;https://www.baidu.com/img/bd_logo1.png?where=super&quot;);
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+            InputStream inputStream = urlConnection.getInputStream();
+            Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+            // 加一个水印
+            bitmap = createWatermark(bitmap,&quot;RxJava2.0&quot;);
+            // 显示到图片
+            Message message = Message.obtain();
+            message.obj = bitmap;
+            mHandler.sendMessage(message);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}).start();
+
+private Handler mHandler = new Handler(){
+    @Override
+    public void handleMessage(Message msg) {
+        Bitmap bitmap = (Bitmap) msg.obj;
+        mImageView.setImageBitmap(bitmap);
+    }
+};
+</code></pre> <h4 id="使用-rxjava-之后"><a href="#使用-rxjava-之后" aria-hidden="true" class="header-anchor">#</a> 使用 RxJava 之后</h4> <div class="language-python line-numbers-mode"><pre class="language-python"><code>Observable<span class="token punctuation">.</span>just<span class="token punctuation">(</span><span class="token string">&quot;https://www.baidu.com/img/bd_logo1.png?where=super&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>new Function<span class="token operator">&lt;</span>String<span class="token punctuation">,</span> Bitmap<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">//</span> 事件变换
+
+      @Override
+      public Bitmap <span class="token builtin">apply</span><span class="token punctuation">(</span>@NonNull String urlPath<span class="token punctuation">)</span> throws Exception <span class="token punctuation">{</span>
+          URL url <span class="token operator">=</span> new URL<span class="token punctuation">(</span>urlPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          HttpURLConnection urlConnection <span class="token operator">=</span> <span class="token punctuation">(</span>HttpURLConnection<span class="token punctuation">)</span> url<span class="token punctuation">.</span>openConnection<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          InputStream inputStream <span class="token operator">=</span> urlConnection<span class="token punctuation">.</span>getInputStream<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          Bitmap bitmap <span class="token operator">=</span> BitmapFactory<span class="token punctuation">.</span>decodeStream<span class="token punctuation">(</span>inputStream<span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span> bitmap<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>new Function<span class="token operator">&lt;</span>Bitmap<span class="token punctuation">,</span> Bitmap<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      @Override
+      public Bitmap <span class="token builtin">apply</span><span class="token punctuation">(</span>@NonNull Bitmap bitmap<span class="token punctuation">)</span> throws Exception <span class="token punctuation">{</span>
+          bitmap <span class="token operator">=</span> createWatermark<span class="token punctuation">(</span>bitmap<span class="token punctuation">,</span> <span class="token string">&quot;RxJava2.0&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token keyword">return</span> bitmap<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span>subscribeOn<span class="token punctuation">(</span>Schedulers<span class="token punctuation">.</span>io<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span>observeOn<span class="token punctuation">(</span>AndroidSchedulers<span class="token punctuation">.</span>mainThread<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span>subscribe<span class="token punctuation">(</span>new Consumer<span class="token operator">&lt;</span>Bitmap<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+      @Override
+      public void accept<span class="token punctuation">(</span>Bitmap bitmap<span class="token punctuation">)</span> throws Exception <span class="token punctuation">{</span>
+          mImageView<span class="token punctuation">.</span>setImageBitmap<span class="token punctuation">(</span>bitmap<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h4 id="rxjava-优势"><a href="#rxjava-优势" aria-hidden="true" class="header-anchor">#</a> RxJava 优势</h4> <ul><li><p>实现优雅：链式调用，一点到底</p></li> <li><p>逻辑简洁：代码可读性高，解耦</p></li> <li><p>使用简单：支持线程调度和各种操作符</p></li> <li><p>扩展维护：随着程序逻辑的复杂性提高，它依然能够保持简洁和优雅</p></li></ul></div> <span id="footerPost" data-v-95d4b5b2></span></div> <div id="post-toc" class="post-toc el-col el-col-6" data-v-95d4b5b2><h4 class="catalog-title" data-v-95d4b5b2>TOC</h4> <div class="catalog-body" data-v-95d4b5b2><ul id="catalog-list" class="catalog-list" data-v-95d4b5b2></ul></div></div></div> <div class="post-nav el-row is-justify-space-around el-row--flex" data-v-95d4b5b2><div class="post-prev el-col el-col-7" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/React%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86.html" data-v-95d4b5b2><i class="el-icon-arrow-left" data-v-95d4b5b2></i> Prev
+        </a> <p class="nav-title" data-v-95d4b5b2>React知识点整理</p></div></div> <div class="post-next el-col el-col-7 el-col-lg-pull-5" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/rxjava%E7%AC%94%E8%AE%B02.html" data-v-95d4b5b2>
+          Next
+          <i class="el-icon-arrow-right" data-v-95d4b5b2></i></a> <p class="nav-title" data-v-95d4b5b2>Rxjava笔记</p></div></div></div> <div class="el-row is-justify-center el-row--flex" data-v-95d4b5b2><div class="el-col el-col-23" data-v-95d4b5b2></div></div> <span data-v-d999c3f2 data-v-95d4b5b2><button type="button" class="el-button toc-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="iconfont icon-service-directory" data-v-d999c3f2></i></span></button> <button type="button" class="el-button gotop-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="el-icon-arrow-up" data-v-d999c3f2></i></span></button></span></div></main></section> <button type="button" class="el-button gotop-btn el-button--primary is-circle" style="display:none;" data-v-78a2dcfa data-v-80d5f2bc><!----><!----><span><i class="el-icon-arrow-up" data-v-78a2dcfa></i></span></button></section> <footer class="el-footer container-footer" style="height:60px;" data-v-76c50ee3 data-v-80d5f2bc><div class="footer-warp el-row is-justify-center is-align-center el-row--flex footerMargin" data-v-76c50ee3><div class="footer-top el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3>
+          博客内容遵循
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" data-v-76c50ee3>知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span></p></div> <div class="footer-bottom el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3><span data-v-76c50ee3>
+            w4ctech—深自缄默 如云漂泊 © 2018-10 ~ 2019-11
+          </span></span> <span data-v-76c50ee3>
+          Power by
+          <a href="https://vuepress.vuejs.org/zh/" target="_blank" data-v-76c50ee3>VuePress</a> Theme
+          <a href="https://github.com/zhhlwd/vuepress-theme-indigo-material" target="_blank" data-v-76c50ee3>indigo material</a></span></p></div></div></footer> <div class="overlay" data-v-80d5f2bc></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f6532e8d.js" defer></script><script src="/assets/js/1.ae346d11.js" defer></script><script src="/assets/js/14.7fe932cb.js" defer></script><script src="/assets/js/5.97d58917.js" defer></script><script src="/assets/js/7.411d902d.js" defer></script><script src="/assets/js/9.141b68b1.js" defer></script><script src="/assets/js/6.3e579366.js" defer></script><script src="/assets/js/25.73c683c0.js" defer></script><script src="/assets/js/13.99dd5eea.js" defer></script><script src="/assets/js/15.1670b3c9.js" defer></script>
+  </body>
+</html>

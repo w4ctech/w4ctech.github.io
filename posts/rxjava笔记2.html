@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>Rxjava笔记 | w4ctech—深自缄默 如云漂泊</title>
+    <meta name="description" content="w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rxjava笔记 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:site_name" content="Rxjava笔记 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Rxjava笔记 | w4ctech—深自缄默 如云漂泊" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.330ac441.css" as="style"><link rel="preload" href="/assets/js/app.f6532e8d.js" as="script"><link rel="preload" href="/assets/js/1.ae346d11.js" as="script"><link rel="preload" href="/assets/js/14.7fe932cb.js" as="script"><link rel="preload" href="/assets/js/5.97d58917.js" as="script"><link rel="preload" href="/assets/js/7.411d902d.js" as="script"><link rel="preload" href="/assets/js/9.141b68b1.js" as="script"><link rel="preload" href="/assets/js/6.3e579366.js" as="script"><link rel="preload" href="/assets/js/36.f12d6e13.js" as="script"><link rel="preload" href="/assets/js/13.99dd5eea.js" as="script"><link rel="preload" href="/assets/js/15.1670b3c9.js" as="script"><link rel="prefetch" href="/assets/js/10.39987fcb.js"><link rel="prefetch" href="/assets/js/11.d5940bcd.js"><link rel="prefetch" href="/assets/js/12.cf4a791b.js"><link rel="prefetch" href="/assets/js/16.d33edf19.js"><link rel="prefetch" href="/assets/js/17.5fcdcec0.js"><link rel="prefetch" href="/assets/js/18.6dddfe3e.js"><link rel="prefetch" href="/assets/js/19.c91e8510.js"><link rel="prefetch" href="/assets/js/20.9dab0467.js"><link rel="prefetch" href="/assets/js/21.4ea6b0b2.js"><link rel="prefetch" href="/assets/js/22.c0f91536.js"><link rel="prefetch" href="/assets/js/23.118678a7.js"><link rel="prefetch" href="/assets/js/24.80089d51.js"><link rel="prefetch" href="/assets/js/25.73c683c0.js"><link rel="prefetch" href="/assets/js/26.785a6c8b.js"><link rel="prefetch" href="/assets/js/27.dca280da.js"><link rel="prefetch" href="/assets/js/28.e7c9d219.js"><link rel="prefetch" href="/assets/js/29.395ef867.js"><link rel="prefetch" href="/assets/js/30.a6f303ea.js"><link rel="prefetch" href="/assets/js/31.87f43480.js"><link rel="prefetch" href="/assets/js/32.dd91c3b7.js"><link rel="prefetch" href="/assets/js/33.4f589617.js"><link rel="prefetch" href="/assets/js/34.52618314.js"><link rel="prefetch" href="/assets/js/35.ec810edf.js"><link rel="prefetch" href="/assets/js/37.a9f5c694.js"><link rel="prefetch" href="/assets/js/38.358cf9ca.js"><link rel="prefetch" href="/assets/js/39.6f9649e8.js"><link rel="prefetch" href="/assets/js/4.08839aaf.js"><link rel="prefetch" href="/assets/js/40.fbef6643.js"><link rel="prefetch" href="/assets/js/41.7f279fd8.js"><link rel="prefetch" href="/assets/js/42.8d666134.js"><link rel="prefetch" href="/assets/js/43.bafe2bae.js"><link rel="prefetch" href="/assets/js/44.f7c9c349.js"><link rel="prefetch" href="/assets/js/45.c8de53ac.js"><link rel="prefetch" href="/assets/js/46.e2035206.js"><link rel="prefetch" href="/assets/js/47.7a45505a.js"><link rel="prefetch" href="/assets/js/48.bcc99385.js"><link rel="prefetch" href="/assets/js/8.a341866b.js"><link rel="prefetch" href="/assets/js/vendors~search.9109d0cf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.330ac441.css">
+  </head>
+  <body>
+    <div id="loader-wrapper" style="display: none;opacity:0">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="app" data-server-rendered="true"><div style="height:100%;" data-v-80d5f2bc><section class="el-container main-container" data-v-80d5f2bc><aside class="el-aside menu" style="width:auto;" data-v-67e96130 data-v-80d5f2bc><ul role="menubar" class="menu-wrap el-menu" style="background-color:;" data-v-67e96130><li data-v-67e96130><div class="brand-wrap" style="background-image:url(/brand.jpg);" data-v-67e96130><div class="brand" data-v-67e96130><a href="/" class="avatar waves-effect waves-circle waves-light router-link-active" data-v-67e96130><img src="/avatar.jpg" data-v-67e96130></a> <hgroup class="introduce" data-v-67e96130><div class="nickname" data-v-67e96130>w4ctech</div> <a title="w3ctech@qq.com" class="mail" data-v-67e96130>w3ctech@qq.com</a></hgroup></div></div></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-home" data-v-67e96130></i> <span class="item-title" data-v-67e96130>个人主页</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-biaoqian" data-v-67e96130></i> <span class="item-title" data-v-67e96130>标签分类</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-wenzhang" data-v-67e96130></i> <span class="item-title" data-v-67e96130>时间归档</span></li> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-aboutme" data-v-67e96130></i> <span class="item-title" data-v-67e96130>自我介绍</span></li></ul></aside> <section class="el-container container-warp" data-v-80d5f2bc><header id="topHeader" class="el-header top-header" style="height:60px;padding-left:260px;" data-v-1a942948 data-v-80d5f2bc><div class="header-warp el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-12 el-col-xs-7" data-v-1a942948><div class="el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-2" data-v-1a942948><button type="button" class="el-button el-button--primary is-circle" data-v-1a942948><!----><!----><span><i class="iconfont icon-caidan" data-v-1a942948></i></span></button></div></div></div> <div class="el-col el-col-20 el-col-xs-24" data-v-1a942948><div class="grid-content bg-purple-light" data-v-1a942948><div class="el-row is-justify-end is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-13 el-col-xs-24 el-col-sm-21 el-col-md-17 el-col-lg-13" data-v-1a942948><div aria-haspopup="listbox" role="combobox" aria-owns="el-autocomplete-4351" class="el-autocomplete search-input" data-v-1a942948><div class="el-input el-input--small el-input--suffix"><!----><input type="text" autocomplete="off" valueKey="value" popperClass="search-popper" placeholder="搜搜看" fetchSuggestions="function () { [native code] }" debounce="300" placement="bottom-start" popperAppendToBody="true" value="" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-search search-ico" data-v-1a942948></i><!----></span><!----></span><!----></div><div role="region" class="el-autocomplete-suggestion el-popper search-popper" style="width:;display:none;"><div class="el-scrollbar"><div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="width:0;transform:translateX(0%);ms-transform:translateX(0%);webkit-transform:translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="height:0;transform:translateY(0%);ms-transform:translateY(0%);webkit-transform:translateY(0%);"></div></div></div></div></div></div></div></div></div></div></header> <main class="el-main my-main" style="margin-left:240px;" data-v-105de776 data-v-80d5f2bc><div class="content-header index-header" data-v-60d87e45 data-v-105de776><div class="container fade-scale in" data-v-60d87e45><h1 id="conentHeader" class="title" data-v-60d87e45>Rxjava笔记</h1> <h5 class="subtitle" data-v-60d87e45></h5></div></div> <div data-v-95d4b5b2 data-v-105de776 data-v-105de776><div class="post-content el-row is-justify-center el-row--flex" data-v-95d4b5b2><div id="post-card" class="post-card post-sign el-col el-col-16 el-col-xs-24 el-col-sm-23 el-col-md-23 el-col-lg-16" data-v-95d4b5b2><div class="content__default" data-v-95d4b5b2><h4 id="添加依赖"><a href="#添加依赖" aria-hidden="true" class="header-anchor">#</a> 添加依赖</h4> <pre><code>compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+</code></pre> <hr> <pre><code>compile 'io.reactivex.rxjava2:rxandroid:2.1.0'
+compile 'io.reactivex.rxjava2:rxjava:2.2.3'
+</code></pre> <h4 id="创建数据源（被观察者-可观察者）"><a href="#创建数据源（被观察者-可观察者）" aria-hidden="true" class="header-anchor">#</a> 创建数据源（被观察者/可观察者）</h4> <h6 id="just-方法"><a href="#just-方法" aria-hidden="true" class="header-anchor">#</a> just 方法</h6> <blockquote><p>返回一个可观察对象，该对象发出给定(常量引用)项的信号，然后完成</p></blockquote> <pre><code>Observable.just(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+.subscribe(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept(Integer integer) throws Exception {
+        System.out.println(&quot;just：&quot; + integer);
+    }
+});
+</code></pre> <hr> <pre><code>just：1
+just：2
+just：4
+just：5
+just：6
+just：7
+just：8
+just：9
+just：10
+</code></pre> <h6 id="fromarray-方法"><a href="#fromarray-方法" aria-hidden="true" class="header-anchor">#</a> fromArray 方法</h6> <blockquote><p>fromArray 和 Just 几乎是一样的效果，只不过 Just 限制 10 个以内，而 fromArray 并没有限制，查看得知 单个参数 Just 是自行创建 ObservableJust，而多个参数 Just 最终还是回调了 fromArray，这里不再过多演示</p></blockquote> <h6 id="create-方法"><a href="#create-方法" aria-hidden="true" class="header-anchor">#</a> create 方法</h6> <pre><code>Observable.create(new ObservableOnSubscribe&lt;Integer&gt;() {
+
+    @Override
+    public void subscribe(ObservableEmitter&lt;Integer&gt; emitter) throws Exception {
+        //执行多次
+        emitter.onNext(1);
+        emitter.onNext(2);
+        emitter.onNext(3);
+        //标记事件结束
+        emitter.onComplete();
+        //标记事件发送错误
+        //emitter.onError(new NullPointerException(&quot;不能为空&quot;));
+    }
+}).subscribe(new Consumer&lt;Integer&gt;() {
+
+    @Override
+    public void accept(Integer integer) throws Exception {
+        System.out.println(&quot;create：&quot; + integer);
+    }
+});
+</code></pre> <hr> <pre><code>create：1
+create：2
+create：3
+</code></pre> <h6 id="range-方法"><a href="#range-方法" aria-hidden="true" class="header-anchor">#</a> range 方法</h6> <blockquote><p>使用范围数据，指定输出数据的范围（1-40的数值）</p></blockquote> <pre><code>Observable.range(3, 5)
+.subscribe(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept(Integer integer) throws Exception {
+        System.out.println(&quot;range：&quot; + integer);
+    }
+});
+</code></pre> <hr> <pre><code>range：3
+range：4
+range：5
+range：6
+range：7
+</code></pre> <h6 id="interval-方法"><a href="#interval-方法" aria-hidden="true" class="header-anchor">#</a> interval 方法</h6> <blockquote><p>指定某一时刻进行数据发送</p></blockquote> <pre><code>Observable.interval(10, 1, TimeUnit.SECONDS) // 先等待 10 秒，之后再每一秒发送一次，10 秒这个参数也可以不填，默认用间隔时间参数替代（这里示例 1 秒）
+.subscribe(new Consumer&lt;Long&gt;() {
+    @Override
+    public void accept(Long l) throws Exception {
+        System.out.println(&quot;interval：&quot; + l);
+    }
+});
+</code></pre> <hr> <pre><code>2019-03-20 15:30:33.331 interval：0
+2019-03-20 15:30:34.331 interval：1
+2019-03-20 15:30:35.331 interval：2
+2019-03-20 15:30:36.331 interval：3
+2019-03-20 15:30:37.331 interval：4
+2019-03-20 15:30:38.331 interval：5
+..................................
+</code></pre> <h4 id="创建事件的接收者（观察者-订阅者），onnext方法中的数据类型必须被观察者指定的泛型"><a href="#创建事件的接收者（观察者-订阅者），onnext方法中的数据类型必须被观察者指定的泛型" aria-hidden="true" class="header-anchor">#</a> 创建事件的接收者（观察者|订阅者），onNext方法中的数据类型必须被观察者指定的泛型</h4> <pre><code>// 表示观察者不对被观察者发送的事件作出任何响应（但被观察者还是可以继续发送事件）
+public final Disposable subscribe() {}
+
+// 表示观察者只对被观察者发送的Next事件作出响应
+public final Disposable subscribe(Consumer&lt;? super T&gt; onNext) {}
+
+// 表示观察者只对被观察者发送的Next事件 &amp; Error事件作出响应
+public final Disposable subscribe(Consumer&lt;? super T&gt; onNext, Consumer&lt;? super Throwable&gt; onError) {} 
+
+// 表示观察者只对被观察者发送的Next事件、Error事件 &amp; Complete事件作出响应
+public final Disposable subscribe(Consumer&lt;? super T&gt; onNext, Consumer&lt;? super Throwable&gt; onError, Action onComplete) {}
+
+// 表示观察者只对被观察者发送的Next事件、Error事件 、Complete事件 &amp; onSubscribe事件作出响应
+public final Disposable subscribe(Consumer&lt;? super T&gt; onNext, Consumer&lt;? super Throwable&gt; onError, Action onComplete, Consumer&lt;? super Disposable&gt; onSubscribe) {}
+
+// 表示观察者对被观察者所有的事件做出响应
+public final void subscribe(Observer&lt;? super T&gt; observer) {}
+</code></pre> <h6 id="observer-类用法"><a href="#observer-类用法" aria-hidden="true" class="header-anchor">#</a> Observer 类用法</h6> <blockquote><p>onSubscribe：订阅的时候被调用，方法参数有 Disposable，可用于取消订阅</p></blockquote> <blockquote><p>onNext(T item)：Observable调用这个方法发射数据，方法的参数就是Observable发射的数据，这个方法可能会被调用多次，取决于业务逻辑</p></blockquote> <blockquote><p>onCompleted()：正常终止，在没有遇到错误的情况下，Observable在最后一次调用onNext之后调用此方法</p></blockquote> <blockquote><p>onError(Throwable e)：当Observable遇到错误或者无法返回期望的数据时会调用这个方法，这个调用会终止Observable，后续不会再调用onNext和onCompleted，onError方法的参数是抛出异常</p></blockquote> <pre><code>//观察者
+Observable.just(1, 2, 3)
+.subscribe(new Observer&lt;Integer&gt;() {
+
+    @Override
+    public void onSubscribe(Disposable d) {
+        System.out.println(&quot;onSubscribe&quot;);
+    }
+
+    @Override
+    public void onNext(Integer integer) {
+        System.out.println(&quot;onNext：&quot; + integer);
+    }
+
+    @Override
+    public void onError(Throwable e) {
+        System.out.println(&quot;onError：&quot; + e.toString());
+    }
+
+    @Override
+    public void onComplete() {
+        System.out.println(&quot;onComplete&quot;);
+    }
+});
+</code></pre> <hr> <pre><code>onSubscribe
+onNext：1
+onNext：2
+onNext：3
+onComplete
+</code></pre> <h6 id="consumer-类用法"><a href="#consumer-类用法" aria-hidden="true" class="header-anchor">#</a> Consumer 类用法</h6> <pre><code>Observable.just(1, 2, 3)
+.subscribe(new Consumer&lt;Integer&gt;() {
+    @Override
+    public void accept(Integer integer) throws Exception {
+        System.out.println(&quot;accept：&quot; + integer);
+    }
+});
+</code></pre> <hr> <pre><code>accept：1
+accept：2
+accept：3
+</code></pre> <h4 id="订阅"><a href="#订阅" aria-hidden="true" class="header-anchor">#</a> 订阅</h4> <pre><code>// 订阅事件，被观察者必须指定了事件的接收者（观察者），整个事件流程才可以被启动
+Disposable disposable = observable.subscribe(observer);
+</code></pre> <hr> <pre><code>// 是否被订阅
+disposable.isDisposed();
+</code></pre> <hr> <pre><code>// 取消订阅
+disposable.dispose();
+</code></pre></div> <span id="footerPost" data-v-95d4b5b2></span></div> <div id="post-toc" class="post-toc el-col el-col-6" data-v-95d4b5b2><h4 class="catalog-title" data-v-95d4b5b2>TOC</h4> <div class="catalog-body" data-v-95d4b5b2><ul id="catalog-list" class="catalog-list" data-v-95d4b5b2></ul></div></div></div> <div class="post-nav el-row is-justify-space-around el-row--flex" data-v-95d4b5b2><div class="post-prev el-col el-col-7" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/RxJava%E7%9A%84%E4%BC%98%E5%8A%BF.html" data-v-95d4b5b2><i class="el-icon-arrow-left" data-v-95d4b5b2></i> Prev
+        </a> <p class="nav-title" data-v-95d4b5b2>RxJava的优势</p></div></div> <div class="post-next el-col el-col-7 el-col-lg-pull-5" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/Rxjava%E7%9A%84%E7%BA%BF%E7%A8%8B%E8%B0%83%E5%BA%A6.html" data-v-95d4b5b2>
+          Next
+          <i class="el-icon-arrow-right" data-v-95d4b5b2></i></a> <p class="nav-title" data-v-95d4b5b2>Rxjava的线程调度</p></div></div></div> <div class="el-row is-justify-center el-row--flex" data-v-95d4b5b2><div class="el-col el-col-23" data-v-95d4b5b2></div></div> <span data-v-d999c3f2 data-v-95d4b5b2><button type="button" class="el-button toc-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="iconfont icon-service-directory" data-v-d999c3f2></i></span></button> <button type="button" class="el-button gotop-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="el-icon-arrow-up" data-v-d999c3f2></i></span></button></span></div></main></section> <button type="button" class="el-button gotop-btn el-button--primary is-circle" style="display:none;" data-v-78a2dcfa data-v-80d5f2bc><!----><!----><span><i class="el-icon-arrow-up" data-v-78a2dcfa></i></span></button></section> <footer class="el-footer container-footer" style="height:60px;" data-v-76c50ee3 data-v-80d5f2bc><div class="footer-warp el-row is-justify-center is-align-center el-row--flex footerMargin" data-v-76c50ee3><div class="footer-top el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3>
+          博客内容遵循
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" data-v-76c50ee3>知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span></p></div> <div class="footer-bottom el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3><span data-v-76c50ee3>
+            w4ctech—深自缄默 如云漂泊 © 2018-10 ~ 2019-11
+          </span></span> <span data-v-76c50ee3>
+          Power by
+          <a href="https://vuepress.vuejs.org/zh/" target="_blank" data-v-76c50ee3>VuePress</a> Theme
+          <a href="https://github.com/zhhlwd/vuepress-theme-indigo-material" target="_blank" data-v-76c50ee3>indigo material</a></span></p></div></div></footer> <div class="overlay" data-v-80d5f2bc></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f6532e8d.js" defer></script><script src="/assets/js/1.ae346d11.js" defer></script><script src="/assets/js/14.7fe932cb.js" defer></script><script src="/assets/js/5.97d58917.js" defer></script><script src="/assets/js/7.411d902d.js" defer></script><script src="/assets/js/9.141b68b1.js" defer></script><script src="/assets/js/6.3e579366.js" defer></script><script src="/assets/js/36.f12d6e13.js" defer></script><script src="/assets/js/13.99dd5eea.js" defer></script><script src="/assets/js/15.1670b3c9.js" defer></script>
+  </body>
+</html>

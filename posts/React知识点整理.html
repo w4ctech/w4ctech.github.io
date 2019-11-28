@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>React知识点整理 | w4ctech—深自缄默 如云漂泊</title>
+    <meta name="description" content="w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="React知识点整理 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:site_name" content="React知识点整理 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="React知识点整理 | w4ctech—深自缄默 如云漂泊" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.330ac441.css" as="style"><link rel="preload" href="/assets/js/app.f6532e8d.js" as="script"><link rel="preload" href="/assets/js/1.ae346d11.js" as="script"><link rel="preload" href="/assets/js/14.7fe932cb.js" as="script"><link rel="preload" href="/assets/js/5.97d58917.js" as="script"><link rel="preload" href="/assets/js/7.411d902d.js" as="script"><link rel="preload" href="/assets/js/9.141b68b1.js" as="script"><link rel="preload" href="/assets/js/6.3e579366.js" as="script"><link rel="preload" href="/assets/js/24.80089d51.js" as="script"><link rel="preload" href="/assets/js/13.99dd5eea.js" as="script"><link rel="preload" href="/assets/js/15.1670b3c9.js" as="script"><link rel="prefetch" href="/assets/js/10.39987fcb.js"><link rel="prefetch" href="/assets/js/11.d5940bcd.js"><link rel="prefetch" href="/assets/js/12.cf4a791b.js"><link rel="prefetch" href="/assets/js/16.d33edf19.js"><link rel="prefetch" href="/assets/js/17.5fcdcec0.js"><link rel="prefetch" href="/assets/js/18.6dddfe3e.js"><link rel="prefetch" href="/assets/js/19.c91e8510.js"><link rel="prefetch" href="/assets/js/20.9dab0467.js"><link rel="prefetch" href="/assets/js/21.4ea6b0b2.js"><link rel="prefetch" href="/assets/js/22.c0f91536.js"><link rel="prefetch" href="/assets/js/23.118678a7.js"><link rel="prefetch" href="/assets/js/25.73c683c0.js"><link rel="prefetch" href="/assets/js/26.785a6c8b.js"><link rel="prefetch" href="/assets/js/27.dca280da.js"><link rel="prefetch" href="/assets/js/28.e7c9d219.js"><link rel="prefetch" href="/assets/js/29.395ef867.js"><link rel="prefetch" href="/assets/js/30.a6f303ea.js"><link rel="prefetch" href="/assets/js/31.87f43480.js"><link rel="prefetch" href="/assets/js/32.dd91c3b7.js"><link rel="prefetch" href="/assets/js/33.4f589617.js"><link rel="prefetch" href="/assets/js/34.52618314.js"><link rel="prefetch" href="/assets/js/35.ec810edf.js"><link rel="prefetch" href="/assets/js/36.f12d6e13.js"><link rel="prefetch" href="/assets/js/37.a9f5c694.js"><link rel="prefetch" href="/assets/js/38.358cf9ca.js"><link rel="prefetch" href="/assets/js/39.6f9649e8.js"><link rel="prefetch" href="/assets/js/4.08839aaf.js"><link rel="prefetch" href="/assets/js/40.fbef6643.js"><link rel="prefetch" href="/assets/js/41.7f279fd8.js"><link rel="prefetch" href="/assets/js/42.8d666134.js"><link rel="prefetch" href="/assets/js/43.bafe2bae.js"><link rel="prefetch" href="/assets/js/44.f7c9c349.js"><link rel="prefetch" href="/assets/js/45.c8de53ac.js"><link rel="prefetch" href="/assets/js/46.e2035206.js"><link rel="prefetch" href="/assets/js/47.7a45505a.js"><link rel="prefetch" href="/assets/js/48.bcc99385.js"><link rel="prefetch" href="/assets/js/8.a341866b.js"><link rel="prefetch" href="/assets/js/vendors~search.9109d0cf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.330ac441.css">
+  </head>
+  <body>
+    <div id="loader-wrapper" style="display: none;opacity:0">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="app" data-server-rendered="true"><div style="height:100%;" data-v-80d5f2bc><section class="el-container main-container" data-v-80d5f2bc><aside class="el-aside menu" style="width:auto;" data-v-67e96130 data-v-80d5f2bc><ul role="menubar" class="menu-wrap el-menu" style="background-color:;" data-v-67e96130><li data-v-67e96130><div class="brand-wrap" style="background-image:url(/brand.jpg);" data-v-67e96130><div class="brand" data-v-67e96130><a href="/" class="avatar waves-effect waves-circle waves-light router-link-active" data-v-67e96130><img src="/avatar.jpg" data-v-67e96130></a> <hgroup class="introduce" data-v-67e96130><div class="nickname" data-v-67e96130>w4ctech</div> <a title="w3ctech@qq.com" class="mail" data-v-67e96130>w3ctech@qq.com</a></hgroup></div></div></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-home" data-v-67e96130></i> <span class="item-title" data-v-67e96130>个人主页</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-biaoqian" data-v-67e96130></i> <span class="item-title" data-v-67e96130>标签分类</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-wenzhang" data-v-67e96130></i> <span class="item-title" data-v-67e96130>时间归档</span></li> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-aboutme" data-v-67e96130></i> <span class="item-title" data-v-67e96130>自我介绍</span></li></ul></aside> <section class="el-container container-warp" data-v-80d5f2bc><header id="topHeader" class="el-header top-header" style="height:60px;padding-left:260px;" data-v-1a942948 data-v-80d5f2bc><div class="header-warp el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-12 el-col-xs-7" data-v-1a942948><div class="el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-2" data-v-1a942948><button type="button" class="el-button el-button--primary is-circle" data-v-1a942948><!----><!----><span><i class="iconfont icon-caidan" data-v-1a942948></i></span></button></div></div></div> <div class="el-col el-col-20 el-col-xs-24" data-v-1a942948><div class="grid-content bg-purple-light" data-v-1a942948><div class="el-row is-justify-end is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-13 el-col-xs-24 el-col-sm-21 el-col-md-17 el-col-lg-13" data-v-1a942948><div aria-haspopup="listbox" role="combobox" aria-owns="el-autocomplete-8328" class="el-autocomplete search-input" data-v-1a942948><div class="el-input el-input--small el-input--suffix"><!----><input type="text" autocomplete="off" valueKey="value" popperClass="search-popper" placeholder="搜搜看" fetchSuggestions="function () { [native code] }" debounce="300" placement="bottom-start" popperAppendToBody="true" value="" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-search search-ico" data-v-1a942948></i><!----></span><!----></span><!----></div><div role="region" class="el-autocomplete-suggestion el-popper search-popper" style="width:;display:none;"><div class="el-scrollbar"><div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="width:0;transform:translateX(0%);ms-transform:translateX(0%);webkit-transform:translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="height:0;transform:translateY(0%);ms-transform:translateY(0%);webkit-transform:translateY(0%);"></div></div></div></div></div></div></div></div></div></div></header> <main class="el-main my-main" style="margin-left:240px;" data-v-105de776 data-v-80d5f2bc><div class="content-header index-header" data-v-60d87e45 data-v-105de776><div class="container fade-scale in" data-v-60d87e45><h1 id="conentHeader" class="title" data-v-60d87e45>React知识点整理</h1> <h5 class="subtitle" data-v-60d87e45></h5></div></div> <div data-v-95d4b5b2 data-v-105de776 data-v-105de776><div class="post-content el-row is-justify-center el-row--flex" data-v-95d4b5b2><div id="post-card" class="post-card post-sign el-col el-col-16 el-col-xs-24 el-col-sm-23 el-col-md-23 el-col-lg-16" data-v-95d4b5b2><div class="content__default" data-v-95d4b5b2><h2 id="react组件内三大属性"><a href="#react组件内三大属性" aria-hidden="true" class="header-anchor">#</a> react组件内三大属性</h2> <p>1.<code>state</code>: 值为容器对象, 保存的是组件内可变的数据,组件根据<code>state</code>中的数据显示, 要更新界面只要更新<code>state</code>即可
+2.<code>props</code>: 值为容器对象, 保存的是从组件外传递过来的数据, 当前组件只读, 父组件修改了自动显示新数据
+3.<code>refs</code>: 值为容器对象, 保存的是<code>n</code>个有<code>ref</code>属性的<code>dom</code>元素对象, 属性名是<code>ref</code>指定的标识名称, 值为对应的<code>dom</code>元素</p> <h2 id="组件内要注意的事项"><a href="#组件内要注意的事项" aria-hidden="true" class="header-anchor">#</a> 组件内要注意的事项</h2> <p>1.组件内置的方法中的<code>this</code>为组件对象
+2.在组件类中自定义的方法中<code>this</code>为<code>null</code>
+a.强制绑定<code>this</code>: 通过函数对象的<code>bind()</code>
+b.箭头函数(<code>ES6</code>模块化编码时才能使用)</p> <h2 id="组件的生命周期-相应钩子函数"><a href="#组件的生命周期-相应钩子函数" aria-hidden="true" class="header-anchor">#</a> 组件的生命周期(相应钩子函数)</h2> <p><code>constructor()</code>: 当创建组件对象时调用
+<code>componentWillMount()</code>: 可以为第一次<code>render()</code>调用, 做一些同步的准备工作
+<strong><code>render()</code></strong>: 返回需要显示的虚拟<code>DOM</code> <strong><code>componentDidMount()</code></strong>: 执行异步任务代码: 发<code>ajax</code>请求, 启动定时器, 绑定监听
+<code>componentWillUpdate()</code>: 更新之前
+<code>render()</code>: 重新渲染组件
+<code>componentDidUpdate()</code>: 更新之后
+<strong><code>componentWillUnmount()</code></strong>: 死亡之前调用, 做一些收尾的工作
+** <code>componentWillReceiveProps()</code>**: 监视接收到新的<code>props</code>, 发送<code>ajax</code>
+加粗部分为重要的钩子函数</p> <h2 id="axios"><a href="#axios" aria-hidden="true" class="header-anchor">#</a> axios</h2> <ol><li>GET请求</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>xios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user?ID=12345'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+axios<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    params<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token constant">ID</span><span class="token punctuation">:</span> <span class="token number">12345</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><ol start="2"><li>POST请求</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    firstName<span class="token punctuation">:</span> <span class="token string">'Fred'</span><span class="token punctuation">,</span>
+    lastName<span class="token punctuation">:</span> <span class="token string">'Flintstone'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="react-router相关"><a href="#react-router相关" aria-hidden="true" class="header-anchor">#</a> react-router相关</h2> <h4 id="组件"><a href="#组件" aria-hidden="true" class="header-anchor">#</a> 组件</h4> <ol><li>路由的基本</li> <li>路由的基本有#一般用在</li> <li>Route是路由的一个原材料，它是控制路径对应显示的组件。我们经常用的是exact、path以及component属性。
+4.渲染时将导航到一个新地址，这个新地址覆盖在访问历史信息里面的本该访问的那个地址。
+5.为你的应用提供声明式，无障碍导航。
+6.这是 的特殊版，顾名思义这就是为页面导航准备的。因为导航需要有 “激活状态”。
+7.只渲染出第一个与当前访问地址匹配的&lt;0route&gt;或。</li></ol> <h4 id="history-api"><a href="#history-api" aria-hidden="true" class="header-anchor">#</a> history API</h4> <p>a.History.createBrowserHistory(): 得到封装window.history的管理对象
+b.History.createHashHistory(): 得到封装window.location.hash的管理对象
+c.history.push(): 添加一个新的历史记录
+d.history.replace(): 用一个新的历史记录替换当前的记录
+e.history.goBack(): 回退到上一个历史记录
+f.history.goForword(): 前进到下一个历史记录
+g.history.listen(function(location){}): 监视历史记录的变化</p> <h4 id="match-location"><a href="#match-location" aria-hidden="true" class="header-anchor">#</a> match location</h4> <p>match -&gt; this.props.match.params.id(post请求)
+location -&gt; this.props.location.query.id(get请求)</p> <p>1.query参数</p> <pre><code> 路由的path: /xxx
+ 请求的路径: /xxxname=tom&amp;age=18
+ ?后面的部分就是quer参数: name=tom, age=18
+</code></pre> <p>2.param参数</p> <pre><code> 路由的path: /xxx/:name/:age
+ 请求的路径: /xxx/jack/18
+ param参数: name=jack,age=18
+ params.name, params.age
+</code></pre> <h2 id="redux"><a href="#redux" aria-hidden="true" class="header-anchor">#</a> redux</h2> <h4 id="核心api"><a href="#核心api" aria-hidden="true" class="header-anchor">#</a> 核心api</h4> <h5 id="createstore"><a href="#createstore" aria-hidden="true" class="header-anchor">#</a> createStore()</h5> <pre><code>作用: 创建包含指定reducer的store对象
+</code></pre> <h5 id="store对象"><a href="#store对象" aria-hidden="true" class="header-anchor">#</a> store对象</h5> <pre><code>redux库最核心的管理对象它内部维护着:state, reducer
+</code></pre> <h5 id="核心方法"><a href="#核心方法" aria-hidden="true" class="header-anchor">#</a> 核心方法:</h5> <pre><code>getState() 返回应用当前的 state 树。它与 store 的最后一个 reducer 返回值相同。
+dispatch(action) 分发 action。这是触发 state 变化的惟一途径。
+subscribe(listener) 监听数据更新,从新渲染组件
+</code></pre> <h5 id="applymiddleware"><a href="#applymiddleware" aria-hidden="true" class="header-anchor">#</a> applyMiddleware()</h5> <p>1.作用:应用上基于redux的中间件(插件库)
+2.编码:</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">,</span> applyMiddleware<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'redux'</span>
+<span class="token keyword">import</span> thunk <span class="token keyword">from</span> <span class="token string">'redux-thunk'</span>  <span class="token comment">// redux异步中间件</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>
+  counter<span class="token punctuation">,</span>
+  <span class="token function">applyMiddleware</span><span class="token punctuation">(</span>thunk<span class="token punctuation">)</span> <span class="token comment">// 应用上异步中间件</span>
+<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="combinereducers"><a href="#combinereducers" aria-hidden="true" class="header-anchor">#</a> combineReducers()</h5> <p>1.作用:合并多个reducer函数
+2.编码:</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">combineReducers</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    xxx<span class="token punctuation">,</span>
+    yyy
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="三个核心概念"><a href="#三个核心概念" aria-hidden="true" class="header-anchor">#</a> 三个核心概念</h2> <p>action:标识要执行行为的对象</p> <p>reducer:根据老的state和action, 产生新的state的纯函数</p> <p>store:将state,action与reducer联系在一起的对象</p> <h4 id="redux-react"><a href="#redux-react" aria-hidden="true" class="header-anchor">#</a> redux-react</h4> <h5 id="react-redux将所有组件分成两大类"><a href="#react-redux将所有组件分成两大类" aria-hidden="true" class="header-anchor">#</a> React-Redux将所有组件分成两大类</h5> <p>1.UI组件</p> <pre><code>a.只负责 UI 的呈现，不带有任何业务逻辑
+  
+b.通过props接收数据(一般数据和函数)
+
+c.不使用任何 Redux 的 API
+d.一般保存在components文件夹下
+</code></pre> <p>2.容器组件</p> <pre><code>a.负责管理数据和业务逻辑，不负责UI的呈现
+b.使用 Redux 的 API
+c.一般保存在containers文件夹下
+</code></pre> <h4 id="相关api"><a href="#相关api" aria-hidden="true" class="header-anchor">#</a> 相关API</h4> <h5 id="_1-provider-让所有组件都可以得到state数据"><a href="#_1-provider-让所有组件都可以得到state数据" aria-hidden="true" class="header-anchor">#</a> 1.Provider 让所有组件都可以得到state数据</h5> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>Provider store<span class="token operator">=</span><span class="token punctuation">{</span>store<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Provider<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h5 id="_2-connect-用于包装-ui-组件生成容器组件"><a href="#_2-connect-用于包装-ui-组件生成容器组件" aria-hidden="true" class="header-anchor">#</a> 2.connect() 用于包装 UI 组件生成容器组件</h5> <h4 id="纯函数与高阶函数"><a href="#纯函数与高阶函数" aria-hidden="true" class="header-anchor">#</a> 纯函数与高阶函数</h4> <h5 id="纯函数"><a href="#纯函数" aria-hidden="true" class="header-anchor">#</a> 纯函数</h5> <ol><li>一类特别的函数: 只要是同样的输入，必定得到同样的输出</li> <li>必须遵守以下一些约束
+a.不得改写参数
+b.不能调用系统 I/O 的API
+c.能调用Date.now()或者Math.random()等不纯的方法</li> <li>reducer函数必须是一个纯函数</li></ol> <h5 id="高阶函数"><a href="#高阶函数" aria-hidden="true" class="header-anchor">#</a> 高阶函数</h5> <ol start="4"><li>理解: 一类特别的函数
+a.情况1: 参数是函数
+b.情况2: 返回是函数</li> <li>常见的高阶函数:
+a.定时器设置函数
+b.数组的map()/filter()/reduce()/find()/bind()
+c.react-redux中的connect函数</li> <li>作用:
+a.能实现更加动态, 更加可扩展的功能</li></ol></div> <span id="footerPost" data-v-95d4b5b2></span></div> <div id="post-toc" class="post-toc el-col el-col-6" data-v-95d4b5b2><h4 class="catalog-title" data-v-95d4b5b2>TOC</h4> <div class="catalog-body" data-v-95d4b5b2><ul id="catalog-list" class="catalog-list" data-v-95d4b5b2></ul></div></div></div> <div class="post-nav el-row is-justify-space-around el-row--flex" data-v-95d4b5b2><div class="post-prev el-col el-col-7" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/react-native%E7%9F%A5%E8%AF%86%E7%82%B9.html" data-v-95d4b5b2><i class="el-icon-arrow-left" data-v-95d4b5b2></i> Prev
+        </a> <p class="nav-title" data-v-95d4b5b2>react-native知识点</p></div></div> <div class="post-next el-col el-col-7 el-col-lg-pull-5" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/RxJava%E7%9A%84%E4%BC%98%E5%8A%BF.html" data-v-95d4b5b2>
+          Next
+          <i class="el-icon-arrow-right" data-v-95d4b5b2></i></a> <p class="nav-title" data-v-95d4b5b2>RxJava的优势</p></div></div></div> <div class="el-row is-justify-center el-row--flex" data-v-95d4b5b2><div class="el-col el-col-23" data-v-95d4b5b2></div></div> <span data-v-d999c3f2 data-v-95d4b5b2><button type="button" class="el-button toc-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="iconfont icon-service-directory" data-v-d999c3f2></i></span></button> <button type="button" class="el-button gotop-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="el-icon-arrow-up" data-v-d999c3f2></i></span></button></span></div></main></section> <button type="button" class="el-button gotop-btn el-button--primary is-circle" style="display:none;" data-v-78a2dcfa data-v-80d5f2bc><!----><!----><span><i class="el-icon-arrow-up" data-v-78a2dcfa></i></span></button></section> <footer class="el-footer container-footer" style="height:60px;" data-v-76c50ee3 data-v-80d5f2bc><div class="footer-warp el-row is-justify-center is-align-center el-row--flex footerMargin" data-v-76c50ee3><div class="footer-top el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3>
+          博客内容遵循
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" data-v-76c50ee3>知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span></p></div> <div class="footer-bottom el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3><span data-v-76c50ee3>
+            w4ctech—深自缄默 如云漂泊 © 2018-10 ~ 2019-11
+          </span></span> <span data-v-76c50ee3>
+          Power by
+          <a href="https://vuepress.vuejs.org/zh/" target="_blank" data-v-76c50ee3>VuePress</a> Theme
+          <a href="https://github.com/zhhlwd/vuepress-theme-indigo-material" target="_blank" data-v-76c50ee3>indigo material</a></span></p></div></div></footer> <div class="overlay" data-v-80d5f2bc></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f6532e8d.js" defer></script><script src="/assets/js/1.ae346d11.js" defer></script><script src="/assets/js/14.7fe932cb.js" defer></script><script src="/assets/js/5.97d58917.js" defer></script><script src="/assets/js/7.411d902d.js" defer></script><script src="/assets/js/9.141b68b1.js" defer></script><script src="/assets/js/6.3e579366.js" defer></script><script src="/assets/js/24.80089d51.js" defer></script><script src="/assets/js/13.99dd5eea.js" defer></script><script src="/assets/js/15.1670b3c9.js" defer></script>
+  </body>
+</html>

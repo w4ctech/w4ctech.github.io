@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>常用正则表达式 | w4ctech—深自缄默 如云漂泊</title>
+    <meta name="description" content="w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="常用正则表达式 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:site_name" content="常用正则表达式 | w4ctech—深自缄默 如云漂泊" />
+    <meta property="og:locale" content="zh-CN" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="常用正则表达式 | w4ctech—深自缄默 如云漂泊" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.330ac441.css" as="style"><link rel="preload" href="/assets/js/app.f6532e8d.js" as="script"><link rel="preload" href="/assets/js/1.ae346d11.js" as="script"><link rel="preload" href="/assets/js/14.7fe932cb.js" as="script"><link rel="preload" href="/assets/js/5.97d58917.js" as="script"><link rel="preload" href="/assets/js/7.411d902d.js" as="script"><link rel="preload" href="/assets/js/9.141b68b1.js" as="script"><link rel="preload" href="/assets/js/6.3e579366.js" as="script"><link rel="preload" href="/assets/js/40.fbef6643.js" as="script"><link rel="preload" href="/assets/js/13.99dd5eea.js" as="script"><link rel="preload" href="/assets/js/15.1670b3c9.js" as="script"><link rel="prefetch" href="/assets/js/10.39987fcb.js"><link rel="prefetch" href="/assets/js/11.d5940bcd.js"><link rel="prefetch" href="/assets/js/12.cf4a791b.js"><link rel="prefetch" href="/assets/js/16.d33edf19.js"><link rel="prefetch" href="/assets/js/17.5fcdcec0.js"><link rel="prefetch" href="/assets/js/18.6dddfe3e.js"><link rel="prefetch" href="/assets/js/19.c91e8510.js"><link rel="prefetch" href="/assets/js/20.9dab0467.js"><link rel="prefetch" href="/assets/js/21.4ea6b0b2.js"><link rel="prefetch" href="/assets/js/22.c0f91536.js"><link rel="prefetch" href="/assets/js/23.118678a7.js"><link rel="prefetch" href="/assets/js/24.80089d51.js"><link rel="prefetch" href="/assets/js/25.73c683c0.js"><link rel="prefetch" href="/assets/js/26.785a6c8b.js"><link rel="prefetch" href="/assets/js/27.dca280da.js"><link rel="prefetch" href="/assets/js/28.e7c9d219.js"><link rel="prefetch" href="/assets/js/29.395ef867.js"><link rel="prefetch" href="/assets/js/30.a6f303ea.js"><link rel="prefetch" href="/assets/js/31.87f43480.js"><link rel="prefetch" href="/assets/js/32.dd91c3b7.js"><link rel="prefetch" href="/assets/js/33.4f589617.js"><link rel="prefetch" href="/assets/js/34.52618314.js"><link rel="prefetch" href="/assets/js/35.ec810edf.js"><link rel="prefetch" href="/assets/js/36.f12d6e13.js"><link rel="prefetch" href="/assets/js/37.a9f5c694.js"><link rel="prefetch" href="/assets/js/38.358cf9ca.js"><link rel="prefetch" href="/assets/js/39.6f9649e8.js"><link rel="prefetch" href="/assets/js/4.08839aaf.js"><link rel="prefetch" href="/assets/js/41.7f279fd8.js"><link rel="prefetch" href="/assets/js/42.8d666134.js"><link rel="prefetch" href="/assets/js/43.bafe2bae.js"><link rel="prefetch" href="/assets/js/44.f7c9c349.js"><link rel="prefetch" href="/assets/js/45.c8de53ac.js"><link rel="prefetch" href="/assets/js/46.e2035206.js"><link rel="prefetch" href="/assets/js/47.7a45505a.js"><link rel="prefetch" href="/assets/js/48.bcc99385.js"><link rel="prefetch" href="/assets/js/8.a341866b.js"><link rel="prefetch" href="/assets/js/vendors~search.9109d0cf.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.330ac441.css">
+  </head>
+  <body>
+    <div id="loader-wrapper" style="display: none;opacity:0">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <div id="app" data-server-rendered="true"><div style="height:100%;" data-v-80d5f2bc><section class="el-container main-container" data-v-80d5f2bc><aside class="el-aside menu" style="width:auto;" data-v-67e96130 data-v-80d5f2bc><ul role="menubar" class="menu-wrap el-menu" style="background-color:;" data-v-67e96130><li data-v-67e96130><div class="brand-wrap" style="background-image:url(/brand.jpg);" data-v-67e96130><div class="brand" data-v-67e96130><a href="/" class="avatar waves-effect waves-circle waves-light router-link-active" data-v-67e96130><img src="/avatar.jpg" data-v-67e96130></a> <hgroup class="introduce" data-v-67e96130><div class="nickname" data-v-67e96130>w4ctech</div> <a title="w3ctech@qq.com" class="mail" data-v-67e96130>w3ctech@qq.com</a></hgroup></div></div></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-home" data-v-67e96130></i> <span class="item-title" data-v-67e96130>个人主页</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-biaoqian" data-v-67e96130></i> <span class="item-title" data-v-67e96130>标签分类</span></li> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-wenzhang" data-v-67e96130></i> <span class="item-title" data-v-67e96130>时间归档</span></li> <!----> <li role="menuitem" tabindex="-1" class="el-menu-item" style="padding-left:20px;color:;background-color:;" data-v-67e96130><i class="iconfont icon-aboutme" data-v-67e96130></i> <span class="item-title" data-v-67e96130>自我介绍</span></li></ul></aside> <section class="el-container container-warp" data-v-80d5f2bc><header id="topHeader" class="el-header top-header" style="height:60px;padding-left:260px;" data-v-1a942948 data-v-80d5f2bc><div class="header-warp el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-12 el-col-xs-7" data-v-1a942948><div class="el-row is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-2" data-v-1a942948><button type="button" class="el-button el-button--primary is-circle" data-v-1a942948><!----><!----><span><i class="iconfont icon-caidan" data-v-1a942948></i></span></button></div></div></div> <div class="el-col el-col-20 el-col-xs-24" data-v-1a942948><div class="grid-content bg-purple-light" data-v-1a942948><div class="el-row is-justify-end is-align-middle el-row--flex" data-v-1a942948><div class="el-col el-col-13 el-col-xs-24 el-col-sm-21 el-col-md-17 el-col-lg-13" data-v-1a942948><div aria-haspopup="listbox" role="combobox" aria-owns="el-autocomplete-6048" class="el-autocomplete search-input" data-v-1a942948><div class="el-input el-input--small el-input--suffix"><!----><input type="text" autocomplete="off" valueKey="value" popperClass="search-popper" placeholder="搜搜看" fetchSuggestions="function () { [native code] }" debounce="300" placement="bottom-start" popperAppendToBody="true" value="" class="el-input__inner"><!----><span class="el-input__suffix"><span class="el-input__suffix-inner"><i class="el-input__icon el-icon-search search-ico" data-v-1a942948></i><!----></span><!----></span><!----></div><div role="region" class="el-autocomplete-suggestion el-popper search-popper" style="width:;display:none;"><div class="el-scrollbar"><div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default"><ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul></div><div class="el-scrollbar__bar is-horizontal"><div class="el-scrollbar__thumb" style="width:0;transform:translateX(0%);ms-transform:translateX(0%);webkit-transform:translateX(0%);"></div></div><div class="el-scrollbar__bar is-vertical"><div class="el-scrollbar__thumb" style="height:0;transform:translateY(0%);ms-transform:translateY(0%);webkit-transform:translateY(0%);"></div></div></div></div></div></div></div></div></div></div></header> <main class="el-main my-main" style="margin-left:240px;" data-v-105de776 data-v-80d5f2bc><div class="content-header index-header" data-v-60d87e45 data-v-105de776><div class="container fade-scale in" data-v-60d87e45><h1 id="conentHeader" class="title" data-v-60d87e45>常用正则表达式</h1> <h5 class="subtitle" data-v-60d87e45></h5></div></div> <div data-v-95d4b5b2 data-v-105de776 data-v-105de776><div class="post-content el-row is-justify-center el-row--flex" data-v-95d4b5b2><div id="post-card" class="post-card post-sign el-col el-col-16 el-col-xs-24 el-col-sm-23 el-col-md-23 el-col-lg-16" data-v-95d4b5b2><div class="content__default" data-v-95d4b5b2><p><strong>- 校验数字的表达式</strong></p> <pre><code>1. 数字：^[0-9]*$
+2. n位的数字：^\d{n}$
+3. 至少n位的数字：^\d{n,}$
+4. m-n位的数字：^\d{m,n}$
+5. 零和非零开头的数字：^(0|[1-9][0-9]*)$
+6. 非零开头的最多带两位小数的数字：^([1-9][0-9]*)+(.[0-9]{1,2})?$
+7. 带1-2位小数的正数或负数：^(\-)?\d+(\.\d{1,2})?$
+8. 正数、负数、和小数：^(\-|\+)?\d+(\.\d+)?$
+9. 有两位小数的正实数：^[0-9]+(.[0-9]{2})?$
+10.有1~3位小数的正实数：^[0-9]+(.[0-9]{1,3})?$
+11. 非零的正整数：^[1-9]\d*$ 或 ^([1-9][0-9]*){1,3}$ 或 ^\+?[1-9][0-9]*$
+12. 非零的负整数：^\-[1-9][]0-9&quot;*$ 或 ^-[1-9]\d*$
+13. 非负整数：^\d+$ 或 ^[1-9]\d*|0$
+14. 非正整数：^-[1-9]\d*|0$ 或 ^((-\d+)|(0+))$
+15. 非负浮点数：^\d+(\.\d+)?$ 或 ^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$
+16. 非正浮点数：^((-\d+(\.\d+)?)|(0+(\.0+)?))$ 或 ^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$
+17. 正浮点数：^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$ 或 ^(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*))$
+18. 负浮点数：^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$ 或 ^(-(([0-9]+\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\.[0-9]+)|([0-9]*[1-9][0-9]*)))$
+19. 浮点数：^(-?\d+)(\.\d+)?$ 或 ^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$
+</code></pre> <p><strong>- 校验字符的表达式</strong></p> <pre><code>1. 汉字：^[\u4e00-\u9fa5]{0,}$
+2. 英文和数字：^[A-Za-z0-9]+$ 或 ^[A-Za-z0-9]{4,40}$
+3. 长度为3-20的所有字符：^.{3,20}$
+4. 由26个英文字母组成的字符串：^[A-Za-z]+$
+5. 由26个大写英文字母组成的字符串：^[A-Z]+$
+6. 由26个小写英文字母组成的字符串：^[a-z]+$
+7. 由数字和26个英文字母组成的字符串：^[A-Za-z0-9]+$
+8. 由数字、26个英文字母或者下划线组成的字符串：^\w+$ 或 ^\w{3,20}$
+9. 中文、英文、数字包括下划线：^[\u4E00-\u9FA5A-Za-z0-9_]+$
+10. 中文、英文、数字但不包括下划线等符号：^[\u4E00-\u9FA5A-Za-z0-9]+$ 或 ^[\u4E00-\u9FA5A-Za-z0-9]{2,20}$
+11. 可以输入含有^%&amp;',;=?$\&quot;等字符：[^%&amp;',;=?$\x22]+
+12. 禁止输入含有~的字符：[^~\x22]+
+</code></pre> <p><strong>- 特殊需求表达式</strong></p> <pre><code>1. Email地址：^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$
+2. 域名：[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(/.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+/.?
+3. InternetURL：[a-zA-z]+://[^\s]* 或 ^http://([\w-]+\.)+[\w-]+(/[\w-./?%&amp;=]*)?$
+4. 手机号码：^(13[0-9]|14[0-9]|15[0-9]|16[0-9]|17[0-9]|18[0-9]|19[0-9])\d{8}$ (由于工信部放号段不定时，所以建议使用泛解析 ^([1][3,4,5,6,7,8,9])\d{9}$)
+5. 电话号码(&quot;XXX-XXXXXXX&quot;、&quot;XXXX-XXXXXXXX&quot;、&quot;XXX-XXXXXXX&quot;、&quot;XXX-XXXXXXXX&quot;、&quot;XXXXXXX&quot;和&quot;XXXXXXXX)：^(\(\d{3,4}-)|\d{3.4}-)?\d{7,8}$ 
+6. 国内电话号码(0511-4405222、021-87888822)：\d{3}-\d{8}|\d{4}-\d{7} 
+7. 18位身份证号码(数字、字母x结尾)：^((\d{18})|([0-9x]{18})|([0-9X]{18}))$
+8. 帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]{4,15}$
+9. 密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]\w{5,17}$
+10. 强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,10}$  
+11. 日期格式：^\d{4}-\d{1,2}-\d{1,2}
+12. 一年的12个月(01～09和1～12)：^(0?[1-9]|1[0-2])$
+13. 一个月的31天(01～09和1～31)：^((0?[1-9])|((1|2)[0-9])|30|31)$ 
+14 钱的输入格式：
+   14-1.有四种钱的表示形式我们可以接受:&quot;10000.00&quot; 和 &quot;10,000.00&quot;, 和没有 &quot;分&quot; 的 &quot;10000&quot; 和 &quot;10,000&quot;：^[1-9][0-9]*$ 
+   14-2.这表示任意一个不以0开头的数字,但是,这也意味着一个字符&quot;0&quot;不通过,所以我们采用下面的形式：^(0|[1-9][0-9]*)$ 
+   14-3.一个0或者一个不以0开头的数字.我们还可以允许开头有一个负号：^(0|-?[1-9][0-9]*)$ 
+   14-4.这表示一个0或者一个可能为负的开头不为0的数字.让用户以0开头好了.把负号的也去掉,因为钱总不能是负的吧.下面我们要加的是说明可能的小数部分：^[0-9]+(.[0-9]+)?$ 
+   14-5.必须说明的是,小数点后面至少应该有1位数,所以&quot;10.&quot;是不通过的,但是 &quot;10&quot; 和 &quot;10.2&quot; 是通过的：^[0-9]+(.[0-9]{2})?$ 
+   14-6.这样我们规定小数点后面必须有两位,如果你认为太苛刻了,可以这样：^[0-9]+(.[0-9]{1,2})?$ 
+   14-7.这样就允许用户只写一位小数.下面我们该考虑数字中的逗号了,我们可以这样：^[0-9]{1,3}(,[0-9]{3})*(.[0-9]{1,2})?$ 
+   14-8.1到3个数字,后面跟着任意个 逗号+3个数字,逗号成为可选,而不是必须：^([0-9]+|[0-9]{1,3}(,[0-9]{3})*)(.[0-9]{1,2})?$ 
+   备注：这就是最终结果了,别忘了&quot;+&quot;可以用&quot;*&quot;替代如果你觉得空字符串也可以接受的话(奇怪,为什么?)最后,别忘了在用函数时去掉去掉那个反斜杠,一般的错误都在这里
+15. xml文件：^([a-zA-Z]+-?)+[a-zA-Z0-9]+\\.[x|X][m|M][l|L]$
+16. 中文字符的正则表达式：[\u4e00-\u9fa5]
+17. 双字节字符：[^\x00-\xff]    (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计2，ASCII字符计1))
+18. 空白行的正则表达式：\n\s*\r    (可以用来删除空白行)
+19. HTML标记的正则表达式：&lt;(\S*?)[^&gt;]*&gt;.*?&lt;/\1&gt;|&lt;.*? /&gt;    (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)
+20. 首尾空白字符的正则表达式：^\s*|\s*$或(^\s*)|(\s*$)    (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)
+21. 腾讯QQ号：[1-9][0-9]{4,}    (腾讯QQ号从10000开始)
+22. 中国邮政编码：[1-9]\d{5}(?!\d)    (中国邮政编码为6位数字)
+23. IP地址：\d+\.\d+\.\d+\.\d+    (提取IP地址时有用)
+24. IP地址：((?:(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|[01]?\\d?\\d))
+</code></pre></div> <span id="footerPost" data-v-95d4b5b2></span></div> <div id="post-toc" class="post-toc el-col el-col-6" data-v-95d4b5b2><h4 class="catalog-title" data-v-95d4b5b2>TOC</h4> <div class="catalog-body" data-v-95d4b5b2><ul id="catalog-list" class="catalog-list" data-v-95d4b5b2></ul></div></div></div> <div class="post-nav el-row is-justify-space-around el-row--flex" data-v-95d4b5b2><div class="post-prev el-col el-col-7" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/javascript%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2.html" data-v-95d4b5b2><i class="el-icon-arrow-left" data-v-95d4b5b2></i> Prev
+        </a> <p class="nav-title" data-v-95d4b5b2>javascript进制转换</p></div></div> <div class="post-next el-col el-col-7 el-col-lg-pull-5" data-v-95d4b5b2><div data-v-95d4b5b2><a href="/posts/react-native%E7%9F%A5%E8%AF%86%E7%82%B9.html" data-v-95d4b5b2>
+          Next
+          <i class="el-icon-arrow-right" data-v-95d4b5b2></i></a> <p class="nav-title" data-v-95d4b5b2>react-native知识点</p></div></div></div> <div class="el-row is-justify-center el-row--flex" data-v-95d4b5b2><div class="el-col el-col-23" data-v-95d4b5b2></div></div> <span data-v-d999c3f2 data-v-95d4b5b2><button type="button" class="el-button toc-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="iconfont icon-service-directory" data-v-d999c3f2></i></span></button> <button type="button" class="el-button gotop-btn el-button--primary is-circle" data-v-d999c3f2><!----><!----><span><i class="el-icon-arrow-up" data-v-d999c3f2></i></span></button></span></div></main></section> <button type="button" class="el-button gotop-btn el-button--primary is-circle" style="display:none;" data-v-78a2dcfa data-v-80d5f2bc><!----><!----><span><i class="el-icon-arrow-up" data-v-78a2dcfa></i></span></button></section> <footer class="el-footer container-footer" style="height:60px;" data-v-76c50ee3 data-v-80d5f2bc><div class="footer-warp el-row is-justify-center is-align-center el-row--flex footerMargin" data-v-76c50ee3><div class="footer-top el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3>
+          博客内容遵循
+          <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" data-v-76c50ee3>知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span></p></div> <div class="footer-bottom el-col el-col-24" data-v-76c50ee3><p class="ellipsis" data-v-76c50ee3><span data-v-76c50ee3><span data-v-76c50ee3>
+            w4ctech—深自缄默 如云漂泊 © 2018-10 ~ 2019-11
+          </span></span> <span data-v-76c50ee3>
+          Power by
+          <a href="https://vuepress.vuejs.org/zh/" target="_blank" data-v-76c50ee3>VuePress</a> Theme
+          <a href="https://github.com/zhhlwd/vuepress-theme-indigo-material" target="_blank" data-v-76c50ee3>indigo material</a></span></p></div></div></footer> <div class="overlay" data-v-80d5f2bc></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f6532e8d.js" defer></script><script src="/assets/js/1.ae346d11.js" defer></script><script src="/assets/js/14.7fe932cb.js" defer></script><script src="/assets/js/5.97d58917.js" defer></script><script src="/assets/js/7.411d902d.js" defer></script><script src="/assets/js/9.141b68b1.js" defer></script><script src="/assets/js/6.3e579366.js" defer></script><script src="/assets/js/40.fbef6643.js" defer></script><script src="/assets/js/13.99dd5eea.js" defer></script><script src="/assets/js/15.1670b3c9.js" defer></script>
+  </body>
+</html>
